@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeSet;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -52,7 +51,6 @@ public static void main(String[] args) {
 	 Collections.sort(ar);
 	 for(String text2:ls){
 	 }
-	 Collections.sort(ls);
 	 for(String text3:hs) {
 	 }
  
