@@ -1,10 +1,10 @@
 package automationAll;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.TreeMap;
 import java.util.TreeSet;
 
 import org.openqa.selenium.By;
@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class NoDublicatOpti {
+public class AllCollections {
 static {
 	System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 }
@@ -38,24 +38,31 @@ public static void main(String[] args) {
 		String text2 = allopts.get(i).getText();
 		String text3 = allopts.get(i).getText();
 		//System.out.println(text);
-		hs.add(text);
 		ts.add(text);
-		ar.add(text);
-		ls.add(text);
+		ar.add(text1);
+		ls.add(text2);
+		hs.add(text3);
+		
 	}
- for(String text:hs) {
-	 	 System.out.println(text);
- }
+	 for(String text:ts) {
+	 }
+	 
+	 for(String text1:ar) {
+	 }
+	 Collections.sort(ar);
+	 for(String text2:ls){
+	 }
+	 Collections.sort(ls);
+	 for(String text3:hs) {
+	 }
  
- for(String text1:ts) {
-	 System.out.println(text1);
- }
- for(String text2:ar) {
-	 System.out.println(text2);
- }
- for(String text3:ls) {
-	 System.out.println(text3);
- }
+ 
+System.out.println();
+System.out.println(ts);
+System.out.println(ar);
+System.out.println(ls);
+System.out.println(hs);
+ 
  d.close();
 }
 }
