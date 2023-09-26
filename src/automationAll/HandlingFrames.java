@@ -10,6 +10,7 @@ public class HandlingFrames {
 	static{
 		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
 		}
+	
 		public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.get("C:\\Users\\Abhishek Ranjan\\OneDrive\\Desktop\\Page1.html");
